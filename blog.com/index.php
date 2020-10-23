@@ -1,3 +1,11 @@
+<?php
+//Соединяемся с базой данных phpMyAdmin
+require $_SERVER['DOCUMENT_ROOT'].'/libraries/rb.php';
+R::setup( 'mysql:host=localhost;dbname=project1', 'mysql', 'mysql' );
+
+session_start();
+?>
+
 <!--
 По всем вопросам обращайтесь по почте gena.06.08@yandex.ru
 
@@ -9,15 +17,6 @@ HTTP - Apache 2.4 PHP 7.2
 Версия MySQL - 5.1
 Версия phpMyAdmin - 4.0.10
 -->
-
-
-<?php
-//Соединяемся с базой данных phpMyAdmin
-require $_SERVER['DOCUMENT_ROOT'].'/libraries/rb.php';
-R::setup( 'mysql:host=localhost;dbname=project1', 'mysql', 'mysql' );
-
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
