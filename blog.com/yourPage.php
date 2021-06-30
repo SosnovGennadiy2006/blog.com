@@ -1,7 +1,7 @@
 <?php 
 //Это ваша страница
 require $_SERVER['DOCUMENT_ROOT'].'/libraries/rb.php';
-R::setup( 'mysql:host=localhost;dbname=project1', 'mysql', 'mysql' );
+R::setup( 'mysql:host=db;dbname=project1', 'mysql', 'mysql' );
 
 session_start();
 if (!$_SESSION['logged_user']) {

@@ -1,5 +1,5 @@
 <?php 
-require $_SERVER['DOCUMENT_ROOT'].'/libraries/rb.php'; R::setup( 'mysql:host=localhost;dbname=project1', 'mysql', 'mysql' );
+require $_SERVER['DOCUMENT_ROOT'].'/libraries/rb.php'; R::setup( 'mysql:host=db;dbname=project1', 'mysql', 'mysql' );
 session_start();
 $userId = $_SESSION['logged_user']->id;
 $imgId = $_SESSION['imgId'];
